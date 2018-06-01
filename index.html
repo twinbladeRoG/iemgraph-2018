@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IEMGRAPH 2018</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="res/favicon.png" type="image/x-icon">
+    <link rel="icon" href="res/favicon.png" type="image/x-icon">
+    
+    <meta name="description" content="International Conference on Emerging Technology in Modelling and Graphics" />
+    <meta name="keywords" content="iemgraph, iem" />
+    <meta name="author" content="Sohan Dutta" />
+    
+    <meta property="og:url"           content="" />
+    <meta property="og:type"          content="" />
+    <meta property="og:title"         content="" />
+    <meta property="og:description"   content="" />
+    <meta property="og:image"         content="" />
+    <meta property="og:author"        content="Sohan Dutta" />
+    
+    <meta name="theme-color" content="#2196F3">
+    
+    <meta name="msapplication-navbutton-color" content="#2196F3">
+    
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2196F3">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css"> 
+    <link rel="stylesheet" href="css/main.css"> 
+  </head>
+  <body ng-app="app" ng-controller="AppController" class="grey lighten-4">
+    
+    <div class="wrapper">
+      <div class="navbar-fixed" style="position: fixed; top: 0px;">
+        <nav class="cyan accent-3">
+          
+          <div class="nav-wrapper">
+
+            <div class="white z-depth-1" style="height: fit-content; 
+                        background-image: url(res/dot.svg);
+                        background-attachment: fixed;
+                        background-position: 0px -100px;">
+
+              <div class="container">
+                <div class="right-align">
+                    <span class="blue-text hashtag">#IEMGRAPH2018</span>
+                    <span><a href=""><img class="social" src="res/social/facebook.svg" /></a></span>
+                    <span><a href=""><img class="social" src="res/social/gmail.svg" /></a></span>
+                    <span><a href=""><img class="social" src="res/social/instagram.svg" /></a></span>
+                    <span><a href=""><img class="social" src="res/social/twitter.svg" /></a></span>
+                  </div>
+                  
+                  <a href="#" data-activates="slide-out" class="button-collapse">
+                    <i class="material-icons black-text">menu</i>
+                  </a>
+                  
+                  <a href="#!">
+                    <img class="logo" src="res/iemgraph.svg" alt="logo"/>
+                  </a>
+              </div>
+
+            </div>
+
+            <!-- Navbar Navigation -->
+            <ul id="nav-mobile" class="container right hide-on-med-and-down">
+              <li><a class="black-text" href="#!">Home</a></li>
+              <li><a class="black-text" href="#!about">About</a></li>
+              <li><a class="black-text" href="#!author">Authors</a></li>
+              <li><a class="black-text" href="#!speaker">Speakers</a></li>
+              <li><a class="black-text" href="#!paper">Call for papers</a></li>
+              <li><a class="black-text" href="#!workshop">Workshops</a></li>
+              <li><a class="black-text" href="#!sposnor">Sponsors</a></li>
+              <li><a class="black-text" href="#!contact">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      
+      <!-- Side Bar Navigation -->
+      <ul id="slide-out" class="side-nav fixed hide-on-large-only">
+        <li>
+          <div class="user-view">
+            <div class="background">
+              <img src="res/blue-material.jpg">
+            </div>
+            <a href="#">
+              <img class="circle" src="res/favicon.png" 
+                style="background: #fff; border-radius: 50%; padding: 8px;"></a>
+            <a href="#"><span class="white-text name" id="user_name">IEMGRAPH 2018</span></a>
+            <a href="#"><span class="white-text email" id="user_email">&nbsp;</span></a>
+            
+          </div>
+        </li>
+        <!-- <li><div class="divider"></div></li> -->
+
+        <li><a href="#!" class="waves-effect"><i class="material-icons">home</i>Home</a></li>
+        
+        <li><a href="#!paper" class="waves-effect"><i class="material-icons">chrome_reader_mode</i>Call for papers</a></li>
+        <li><a class="waves-effect" href="#!about"><i class="material-icons">label</i>About</a></li>
+        <li><a class="waves-effect" href="#!author"><i class="material-icons">domain</i>Authors</a></li>
+        <li><a class="waves-effect" href="#!speaker"><i class="material-icons">domain</i>Speakers</a></li>
+        <li><a class="waves-effect" href="#!"><i class="material-icons">school</i>Workshops</a></li>
+        <li><a class="waves-effect" href="#!"><i class="material-icons">domain</i>Sponsors</a></li>
+        <li><a class="waves-effect" href="#!contact"><i class="material-icons">phone</i>Contact Us</a></li>
+      </ul>
+      
+      <!-- Web Routing Container -->
+      <main ng-view="">
+        
+      </main>
+      
+      <footer class="page-footer blue-grey darken-4">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <img src="res/iemgraph.svg" width="100" />
+              <h5 class="white-text bold">IEMGRAPH 2018</h5>
+              <p class="grey-text text-lighten-4">The 1st IEMGRAPH Conference and Exhibition</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">&nbsp;</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!about">About</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!author">Authors</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!speaker">Speakers</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!paper">Call for papers</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!workshop">Workshops</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!sposnor">Sponsors</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!contact">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright black">
+          <div class="container">
+            IEMGRAPH 2018 ©  All Rights Reserved
+            <a class="grey-text text-lighten-4 right" href="#!"></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+      
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+
+    <script src="js/typed.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/particle-config.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
